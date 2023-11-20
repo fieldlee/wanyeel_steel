@@ -1,0 +1,165 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+      "^le-(.*)": "@/uni_modules/le-dropdown/le-$1.vue"
+			// 以 Wyzg 开头的组件，在 components 目录中查找
+			// "^Wyzg(.*)": "@/components/Wyzg$1.vue"
+		}
+	},
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "采购",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "销售"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/hot/hot",
+			"style": {
+				"navigationBarTitleText": "热门推荐"
+			}
+		},
+		{
+			"path": "pages/goods/goods",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/tools/tools",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "工具"
+			}
+		},
+		{
+			"path": "pages/finace/finace",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "财务"
+			}
+		},
+		{
+			"path": "pages/cart/agreement",
+			"style": {
+				"navigationBarTitleText": "托盘协议"
+			}
+		},
+		{
+			"path": "pages/cart/productInfo",
+			"style": {
+				"navigationBarTitleText": "产品明细"
+			}
+		},
+		{
+			"path": "pages/cart/orderInfo",
+			"style": {
+				"navigationBarTitleText": "订单信息"
+			}
+		},
+    {
+			"path": "pages/cart/afterSaleInfo",
+			"style": {
+				"navigationBarTitleText": "订单售后"
+			}
+		},
+		{
+			"path": "pages/select/select",
+			"style": {
+				"navigationBarTitleText": "选择"
+			}
+		},
+		{
+			"path": "pages/cart/transInfo",
+			"style": {
+				"navigationBarTitleText": "运杂费"
+			}
+		},
+		{
+			"path": "pages/cart/payInfo",
+			"style": {
+				"navigationBarTitleText": "订单结算"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// 设置 TabBar
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#27ba9b",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"list": [
+			{
+				"text": "采购",
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tabs/cart_default.png",
+				"selectedIconPath": "static/tabs/cart_selected.png"
+			},
+			{
+				"text": "销售",
+				"pagePath": "pages/category/category",
+				"iconPath": "static/tabs/category_default.png",
+				"selectedIconPath": "static/tabs/category_selected.png"
+			},
+			{
+				"text": "库存",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/home_default.png",
+				"selectedIconPath": "static/tabs/home_selected.png"
+			},
+			{
+				"text": "财务",
+				"pagePath": "pages/finace/finace",
+				"iconPath": "static/tabs/finace_default.png",
+				"selectedIconPath": "static/tabs/finace_selected.png"
+			},
+			{
+				"text": "工具",
+				"pagePath": "pages/tools/tools",
+				"iconPath": "static/tabs/tools_default.png",
+				"selectedIconPath": "static/tabs/tools_selected.png"
+			}
+		]
+	}
+}
